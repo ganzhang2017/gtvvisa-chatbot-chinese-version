@@ -87,7 +87,7 @@ export default async function handler(req, res) {
         // Try working models
         let completion;
         const workingModels = [
-            "x-ai/grok-4-fast:free",
+            "openai/gpt-oss-20b:free",
             "google/gemini-2.0-flash-exp:free", 
             "deepseek/deepseek-chat-v3.1:free"
         ];
@@ -225,7 +225,7 @@ function getPreparedAnswer(question) {
 
 杰出潜力（Exceptional Promise）：被认可为未来有潜力成为行业领军人物（通常在科技领域工作不足 5 年）。需满足同样的标准，但适用早期职业发展者。
 
-下一步评估：确认您的工作职责确实属于数字技术核心领域，而非支持性或使用性角色。`;
+下一步评估：确认您的工作职责确实属于数字技术核心领域，而非支持性或使用性角色。更多信息请联系info@sagefyai.com`;
     }
     
     if (question === 'Tech Nation申请流程如何运作？请包括所有费用。') {
@@ -325,7 +325,8 @@ function getPreparedAnswer(question) {
 • 外部认可 > 内部认可
 • 量化数据 > 定性描述
 • 近期证据 > 历史成就（优先最近5年）
-• 第三方验证 > 自我声明`;
+• 第三方验证 > 自我声明
+更多信息请联系info@sagefyai.com`;
     }
     
     if (question === '整个过程需要多长时间？') {
@@ -380,7 +381,8 @@ Tech Nation背书申请：
 • 并行准备材料和联系推荐人
 • 提前研究评估标准，专注最强领域
 • 考虑加急处理如有紧急时间需求
-• 预留缓冲时间应对可能的补充材料要求`;
+• 预留缓冲时间应对可能的补充材料要求
+更多信息请联系info@sagefyai.com `;
     }
     
     return "未找到对应的预设回答。";
@@ -445,5 +447,5 @@ function getSimpleFallback(message) {
 • 高质量推荐信
 • 清晰的个人陈述
 
-请告诉我您想了解的具体方面，我可以提供更详细的指导！`;
+请告诉我您想了解的具体方面，我可以提供更详细的指导！更多信息请联系info@sagefyai.com `;
 }
